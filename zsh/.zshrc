@@ -14,6 +14,9 @@
 # Path to your oh-my-zsh installation.
   export ZSH=/home/alejandro/.oh-my-zsh
 
+# Set my favorite editor
+  export EDITOR=vim
+
 # Make Zsh behave as vim 
 bindkey -v
 # Set name of the theme to load. Optionally, if you set this to "random"
