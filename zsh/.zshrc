@@ -1,15 +1,15 @@
 # If you come from bash you might have to change your $PATH.
 
 # Path to Node binaries
-  export PATH=$HOME/bin/programs/node-v8.11.3-linux-x64/bin:$PATH
+  export PATH=$PATH:$HOME/bin/programs/node-v8.11.3-linux-x64/bin
 # Path Ruby binaries
-  export PATH=$HOME/.rubies/ruby-2.5.1/bin:$PATH
+  export PATH=$PATH:$HOME/.rubies/ruby-2.5.1/bin
 # Path go binaries
-  export PATH=$HOME/bin/programs/go/bin:$PATH
+  export PATH=$PATH:$HOME/bin/programs/go/bin
   export GOPATH=$HOME/go/
 
-# Path to binaries installed by aws-cli
-  export PATH=$HOME/.local/bin:$PATH
+# Path to binaries installed by python & aws-cli
+  export PATH=$PATH:$HOME/.local/bin
 
 # Path to your oh-my-zsh installation.
   export ZSH=/home/alejandro/.oh-my-zsh
