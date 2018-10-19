@@ -213,8 +213,8 @@ for_window [class="^.*"] border pixel 1
 bar {
         mode hide
         hidden_state hide
-        status_command i3blocks -c ~/.config/i3/i3blocks.conf -vv
-#       status_command i3status
+#        status_command i3blocks -c ~/.config/i3/i3blocks.conf -vv
+        status_command i3status  -c ~/.config/i3/i3status.conf 
       
     colors {
     
