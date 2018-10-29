@@ -1,5 +1,7 @@
 # If you come from bash you might have to change your $PATH.
-
+#
+# My binaries
+  export PATH=$PATH:$HOME/bin/
 # Path to Node binaries
   export PATH=$PATH:$HOME/bin/programs/node-v8.11.3-linux-x64/bin
 # Path Ruby binaries
@@ -12,10 +14,13 @@
   export PATH=$PATH:$HOME/.local/bin
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/alejandro/.oh-my-zsh
+  export ZSH=$HOME/.oh-my-zsh
 
 # Set my favorite editor
   export EDITOR=vim
+
+# Needed to set this because oh-my-zsh was complaining on mac about insecure completion-dependent directories detected
+  export ZSH_DISABLE_COMPFIX=true
 
 # Make Zsh behave as vim 
 bindkey -v
@@ -103,3 +108,6 @@ source $HOME/.local/bin/aws_zsh_completer.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ns="npm start"
 alias nt="npm test"
+
+# Startup scripts
+sh ~/dotfiles/startup/vscode_settings.sh
