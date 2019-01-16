@@ -3,7 +3,7 @@
 # My binaries
   export PATH=$PATH:$HOME/bin/
 # Path to Node binaries
-  export PATH=$PATH:$HOME/bin/programs/node-v8.11.3-linux-x64/bin
+  export PATH=$PATH:$HOME/bin/programs/node/bin
 # Path Ruby binaries
   export PATH=$PATH:$HOME/.rubies/ruby-2.5.1/bin
 # Path go binaries
@@ -110,4 +110,4 @@ alias ns="npm start"
 alias nt="npm test"
 
 # Startup scripts
-sh ~/dotfiles/startup/vscode_settings.sh
+#sh ~/dotfiles/startup/vscode_settings.sh #Keep my vscode setting on Mac at 42
