@@ -1,5 +1,5 @@
 {
-    "window.zoomLevel": -1,
+    "window.zoomLevel": 1,
     "editor.fontFamily": "'Monospace', 'Droid Sans Fallback'",
     "terminal.integrated.fontFamily": "Monospace",
     "terminal.integrated.fontSize": 12,
@@ -45,5 +45,5 @@
     "editor.wordWrap": "bounded",
     "editor.wordWrapColumn": 120,
     "files.insertFinalNewline": true,
-    "window.titleBarStyle": "native",
+    "window.titleBarStyle": "native"
   }
