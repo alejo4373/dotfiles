@@ -13,6 +13,13 @@
 # Path to binaries installed by python & aws-cli
   export PATH=$PATH:$HOME/.local/bin
 
+
+# Path to ESP32 Tools 
+  #Toolchain 
+  export PATH=$PATH:$HOME/alejo/ESP32/toolchain/xtensa-esp32-elf/bin
+  #IoT Development Framework
+  export IDF_PATH=$HOME/alejo/ESP32/esp-idf
+
 # Path to your oh-my-zsh installation.
   export ZSH=$HOME/.oh-my-zsh
 
