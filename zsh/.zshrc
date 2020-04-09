@@ -1,24 +1,32 @@
-# If you come from bash you might have to change your $PATH.
-#
 # My binaries
   export PATH=$PATH:$HOME/bin/
+  export NPM_PACKAGES="${HOME}/.npm-packages"
+
+# Path to npm modules
+  export PATH="$NPM_PACKAGES/bin:$PATH"
+
+# Unset manpath so we can inherit from /etc/manpath via the `manpath` command
+  unset MANPATH # delete if you already modified MANPATH elsewhere in your config
+  export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
+
 # Path to Node binaries
-  export PATH=$PATH:$HOME/bin/programs/node/bin
+# export PATH=$PATH:$HOME/bin/programs/node/bin
+
 # Path Ruby binaries
-  export PATH=$PATH:$HOME/.rubies/ruby-2.5.1/bin
+#  export PATH=$PATH:$HOME/.rubies/ruby-2.5.1/bin
+
 # Path go binaries
-  export PATH=$PATH:$HOME/bin/programs/go/bin
-  export GOPATH=$HOME/go/
+#  export PATH=$PATH:$HOME/bin/programs/go/bin
+#  export GOPATH=$HOME/go/
 
 # Path to binaries installed by python & aws-cli
-  export PATH=$PATH:$HOME/.local/bin
-
+#  export PATH=$PATH:$HOME/.local/bin
 
 # Path to ESP32 Tools 
   #Toolchain 
-  export PATH=$PATH:$HOME/alejo/ESP32/toolchain/xtensa-esp32-elf/bin
+#  export PATH=$PATH:$HOME/alejo/ESP32/toolchain/xtensa-esp32-elf/bin
   #IoT Development Framework
-  export IDF_PATH=$HOME/alejo/ESP32/esp-idf
+#  export IDF_PATH=$HOME/alejo/ESP32/esp-idf
 
 # Path to your oh-my-zsh installation.
   export ZSH=$HOME/.oh-my-zsh
@@ -34,7 +42,7 @@ bindkey -v
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="gianu"
+ZSH_THEME="amuse"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -83,7 +91,7 @@ plugins=(git z colored-man-pages)
 source $ZSH/oh-my-zsh.sh
 
 # Enable aws-cli autocomplete 
-source $HOME/.local/bin/aws_zsh_completer.sh
+#source $HOME/.local/bin/aws_zsh_completer.sh
 
 # User configuration
 
@@ -114,6 +122,7 @@ source $HOME/.local/bin/aws_zsh_completer.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ns="npm start"
+alias nsd="npm run start:dev"
 alias nt="npm test"
 
 # Startup scripts
