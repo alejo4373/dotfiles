@@ -1,20 +1,12 @@
-// Place your key bindings in this file to overwrite the defaults
 [
-  {
-    "key": "ctrl+f5",
-    "command": "workbench.action.terminal.runActiveFile"
-  },
-  {
-    "key": "ctrl+alt+t",
-    "command": "workbench.action.terminal.toggleTerminal"
-  },
-  {
-    "key": "ctrl+'",
-    "command": "workbench.action.terminal.focus"
-  },
-  {
-    "key": "ctrl+'",
-    "command": "workbench.action.focusActiveEditorGroup",
-    "when": "terminalFocus"
-  }
+    {
+        "key": "cmd+[",
+        "command": "workbench.action.terminal.focus",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+[",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
 ]
