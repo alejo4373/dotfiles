@@ -1,0 +1,15 @@
+[user]
+	name = Alejo
+	email = alejandrofranco@pursuit.org
+[core]
+	filemode = false
+	editor = code --wait
+[status]
+	submoduleSummary = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[alias]
+  lg = log --graph --pretty=format:'%Cred%h% Creset%an -%C(yellow)%d%Creset %s %Cgreen(%cr)'
