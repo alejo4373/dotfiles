@@ -127,3 +127,7 @@ alias nt="npm test"
 
 # Startup scripts
 #sh ~/dotfiles/startup/vscode_settings.sh #Keep my vscode setting on Mac at 42
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
