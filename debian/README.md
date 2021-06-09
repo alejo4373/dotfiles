@@ -26,4 +26,12 @@ There are two drivers for the synaptics trackpad `libinput` and `xserver-xorg-in
 2. Install oh-my-zsh and symlink zsh/.zshrc from this repo to ~/.zshrc
 3. Install youtube-dl from https://ytdl-org.github.io/youtube-dl/download.html
 
+## Shortcuts that I miss from Mac
+
+* `ALT/CMD + SHIFT + [ | ]` to switch tabs in the browser or the iterm. Partically mitigated via Vimium extension key mapping. It doesn't work if there's a tab where the extension cannot run, like chrome://extensions or even the chrome.google.com (extensions store) 
+* `ALT/CMD + [|]` to go back or forward in the browser. NOT MITIGATED 
+* `ALT/CMD + SPACE` to launch applications via Spotlight (mac). MITIGATED via i3 keybindings running d-menu
+* `CMD + OPTION + F` to make a window full screen via the Spectacle App. MITIGATED via i3 keybindings 
+* `CMD + OPTION + LEFT|RIGHT|UP|DOWN` to make a window half the screen Spectacle App. NOT MITIGATED 
+* `ALT/CMD + T` to create tabs in most applications (browser, iterm, vscode, finder). NOT MITIGATED
 
