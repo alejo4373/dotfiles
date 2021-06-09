@@ -1,21 +1,36 @@
 {
-    "window.zoomLevel": 0,
     "cSpell.userWords": [
         "Cheatsheet",
+        "Falsey",
+        "Figma",
         "Ghibli",
+        "MMDD",
+        "Palooza",
         "Pangram",
         "Postgres",
+        "Prefs",
         "Signup",
+        "Strava",
+        "TIMESTAMPTZ",
         "Todos",
+        "VARCHAR",
+        "Walkthrough",
         "Wireframes",
         "Wireframing",
+        "createdb",
         "else's",
         "postgres",
+        "psql",
+        "recaptcha",
         "recursing",
         "repo",
         "repos",
+        "scrollable",
+        "scrollbar",
         "sql",
+        "toolbelt",
         "trello",
+        "trix",
         "unmount",
         "whiteboarding"
     ],
@@ -24,7 +39,6 @@
         80,
         90
     ],
-    "workbench.colorTheme": "Community Material Theme Palenight High Contrast",
     "editor.minimap.enabled": false,
     "workbench.statusBar.visible": true,
     "workbench.activityBar.visible": false,
@@ -57,6 +71,14 @@
     "editor.quickSuggestions": true,
     "html.format.indentInnerHtml": true,
     "emmet.showSuggestionsAsSnippets": true,
+    "emmet.excludeLanguages": [],
+    "emmet.includeLanguages": {
+        "markdown": "html"
+    },
+    "[markdown]": {
+        "editor.wordWrap": "on",
+        "editor.quickSuggestions": true
+    },
     "workbench.startupEditor": "newUntitledFile",
     "liveServer.settings.donotShowInfoMsg": true,
     "peacock.favoriteColors": [
@@ -152,11 +174,44 @@
         "yaml",
         "yml"
     ],
-    "editor.wordWrap": "on",
     "javascript.updateImportsOnFileMove.enabled": "always",
     "liveshare.anonymousGuestApproval": "accept",
     "editor.renderControlCharacters": true,
-    "editor.renderWhitespace": "none",
-    "editor.formatOnPaste": true,
-    "editor.formatOnSave": true,
+    "editor.renderWhitespace": "all",
+    "cSpell.enableFiletypes": [
+        "!typescript",
+        "pgsql"
+    ],
+    "jest.pathToJest": "npm test --",
+    "cSpell.language": "en,en-GB",
+    "workbench.colorTheme": "Default Light+",
+    "html.format.wrapLineLength": 0,
+    "markdown.preview.fontSize": 12,
+    "pgsql.connections": [
+        {
+            "host": "kashin.db.elephantsql.com",
+            "dbname": "ialnuwjg",
+            "user": "ialnuwjg",
+            "password": "",
+            "emptyPasswordInput": false,
+            "port": "5432",
+            "profileName": "sample_profile",
+            "connectTimeout": 15,
+            "encrypt": false,
+            "applicationName": "vscode-pgsql",
+            "hostaddr": "",
+            "options": "",
+            "sslmode": "prefer",
+            "clientEncoding": "",
+            "sslcompression": true,
+            "sslcert": "",
+            "sslkey": "",
+            "sslrootcert": "",
+            "sslcrl": "",
+            "requirepeer": ""
+        }
+    ],
+    "terminal.integrated.tabs.enabled": true,
+    "workbench.editor.untitled.hint": "hidden",
+    "editor.formatOnSave": true
 }
