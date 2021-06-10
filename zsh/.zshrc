@@ -13,8 +13,8 @@
 # export PATH=$PATH:$HOME/bin/programs/node/bin
 
 # Path Ruby binaries
-#  export PATH=$PATH:$HOME/.rubies/ruby-2.5.1/bin
-export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.0.0/bin:/Users/alejandro/.gem/ruby/3.0.0/bin:$PATH"
+# export PATH=$PATH:$HOME/.rubies/ruby-2.5.1/bin
+# export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.0.0/bin:/Users/alejandro/.gem/ruby/3.0.0/bin:$PATH"
 
 # Path go binaries
 #  export PATH=$PATH:$HOME/bin/programs/go/bin
