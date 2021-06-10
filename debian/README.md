@@ -35,3 +35,35 @@ There are two drivers for the synaptics trackpad `libinput` and `xserver-xorg-in
 * `CMD + OPTION + LEFT|RIGHT|UP|DOWN` to make a window half the screen Spectacle App. NOT MITIGATED 
 * `ALT/CMD + T` to create tabs in most applications (browser, iterm, vscode, finder). NOT MITIGATED
 
+## Tracking down why dmenu doesn't have the correct PATH
+
+Problem: dmenu does not have $PATH properly set and therefore it doesn't find many of my programs.
+
+Findings:
+
+* dmenu_run parent process is PID=1 or `init`
+* dmenu_run runs with $SHELL=zsh and $USER=alejandro
+* dmenu_run "incomplete" $PATH at is `/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games`
+* When launching dmenu_run via the mod1+space i3 shortut my ~/.zshrc is not read file
+* When running dmenu_run from a terminal and with no cache (.cache/dmenu_run), dmenu will run with my "complete" $PATH
+* /etc/zsh/zshenv is run before dmenu_run is spawned. Verified because new variables exported were present when running printenv > ~/env.out in dmenu
+* The variables exported in /etc/zsh/zshenv don't make it into dmenu's environment because dmenu is not a child of the shell(zsh) process.
+* dmenu is launched by i3 
+
+Trying to figure out how the WM(i3) is launched
+
+* https://wiki.archlinux.org/title/LightDM
+* `systemctl status lightdm` shows that lightdm was started by running /etc/X11/default-display-manager
+* lightdm starts the X server and i3 as seen in /var/log/lightdm.log
+* /etc/X11/xinitrc -> Xsession -> ~/.xsessionrc
+
+### Conclusion
+Because of the way that I log into my computer (via a displaymanager LightDM) graphical applications like dmenu that need my PATH don't get my full path being configured in ~/.zshrc because they are not children of the shell (zsh), they are children of the X server, therefore any ENV variables GUI programs need must be set in the files sourced by the X server starup process like /etc/X11/xsession, etc in my case ~/.xsessionrc
+
+The solution then was to add the additional PATH setup I needed to ~/.xsessionrc
+
+References:
+* https://unix.stackexchange.com/questions/335515/i3-dmenu-does-not-browse-path
+* https://www.debian.org/doc/manuals/debian-reference/ch07.en.html#_starting_the_x_window_system
+* https://wiki.archlinux.org/title/LightDM#Environment_variables
+
