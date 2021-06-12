@@ -25,6 +25,7 @@ There are two drivers for the synaptics trackpad `libinput` and `xserver-xorg-in
 1. Install git, curl, htop, zsh, vim, mpv
 2. Install oh-my-zsh and symlink zsh/.zshrc from this repo to ~/.zshrc
 3. Install youtube-dl from https://ytdl-org.github.io/youtube-dl/download.html
+4. Install nvm from GitHub and then install `npm install --lts`
 
 ## Shortcuts that I miss from Mac
 
