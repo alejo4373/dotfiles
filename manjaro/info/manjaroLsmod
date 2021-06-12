@@ -1,0 +1,97 @@
+Module                  Size  Used by
+nls_utf8               16384  0
+isofs                  40960  1
+uas                    20480  0
+usb_storage            53248  2 uas
+fuse                   86016  5
+joydev                 20480  0
+mousedev               20480  0
+radeon               1400832  15
+wl                   6152192  0
+kvm_amd                61440  0
+kvm                   413696  1 kvm_amd
+irqbypass              16384  1 kvm
+ttm                    69632  1 radeon
+psmouse               122880  0
+rtsx_usb_ms            20480  0
+memstick               16384  1 rtsx_usb_ms
+uvcvideo               77824  0
+videobuf2_vmalloc      16384  1 uvcvideo
+videobuf2_memops       16384  1 videobuf2_vmalloc
+videobuf2_v4l2         24576  1 uvcvideo
+videobuf2_core         32768  2 uvcvideo,videobuf2_v4l2
+v4l2_common            16384  1 videobuf2_v4l2
+videodev              131072  4 uvcvideo,v4l2_common,videobuf2_core,videobuf2_v4l2
+media                  20480  2 uvcvideo,videodev
+drm_kms_helper        102400  1 radeon
+r8169                  73728  0
+evdev                  20480  13
+input_leds             16384  0
+mac_hid                16384  0
+mii                    16384  1 r8169
+cfg80211              434176  1 wl
+k10temp                16384  0
+drm                   245760  7 ttm,drm_kms_helper,radeon
+ideapad_laptop         24576  0
+sparse_keymap          16384  1 ideapad_laptop
+agpgart                32768  2 drm,ttm
+snd_hda_codec_conexant    20480  1
+snd_hda_codec_generic    65536  1 snd_hda_codec_conexant
+snd_hda_codec_hdmi     45056  1
+rfkill                 20480  4 cfg80211,ideapad_laptop
+wmi                    20480  1 ideapad_laptop
+syscopyarea            16384  1 drm_kms_helper
+snd_hda_intel          32768  4
+sysfillrect            16384  1 drm_kms_helper
+sysimgblt              16384  1 drm_kms_helper
+fb_sys_fops            16384  1 drm_kms_helper
+snd_hda_codec          94208  4 snd_hda_codec_hdmi,snd_hda_codec_conexant,snd_hda_codec_generic,snd_hda_intel
+i2c_algo_bit           16384  1 radeon
+shpchp                 32768  0
+battery                16384  0
+ac                     16384  0
+fjes                   28672  0
+video                  32768  1 ideapad_laptop
+snd_hda_core           45056  5 snd_hda_codec_hdmi,snd_hda_codec_conexant,snd_hda_codec_generic,snd_hda_codec,snd_hda_intel
+snd_hwdep              16384  1 snd_hda_codec
+snd_pcm                77824  4 snd_hda_codec_hdmi,snd_hda_codec,snd_hda_intel,snd_hda_core
+snd_timer              28672  1 snd_pcm
+snd                    57344  16 snd_hwdep,snd_timer,snd_hda_codec_hdmi,snd_hda_codec_conexant,snd_pcm,snd_hda_codec_generic,snd_hda_codec,snd_hda_intel
+button                 16384  0
+soundcore              16384  1 snd
+i2c_piix4              20480  0
+acpi_cpufreq           20480  0
+tpm_tis                20480  0
+tpm                    36864  1 tpm_tis
+processor              32768  3 acpi_cpufreq
+sch_fq_codel           20480  3
+ip_tables              20480  0
+x_tables               20480  1 ip_tables
+ext4                  491520  2
+crc16                  16384  1 ext4
+mbcache                20480  1 ext4
+jbd2                   81920  1 ext4
+sr_mod                 24576  0
+cdrom                  49152  1 sr_mod
+sd_mod                 36864  7
+rtsx_usb_sdmmc         28672  0
+led_class              16384  2 rtsx_usb_sdmmc,input_leds
+mmc_core              102400  1 rtsx_usb_sdmmc
+rtsx_usb               20480  2 rtsx_usb_sdmmc,rtsx_usb_ms
+serio_raw              16384  0
+atkbd                  24576  0
+libps2                 16384  2 atkbd,psmouse
+ohci_pci               16384  0
+ahci                   36864  4
+libahci                28672  1 ahci
+libata                184320  2 ahci,libahci
+scsi_mod              131072  5 uas,usb_storage,libata,sd_mod,sr_mod
+ehci_pci               16384  0
+xhci_pci               16384  0
+ohci_hcd               45056  1 ohci_pci
+xhci_hcd              147456  1 xhci_pci
+ehci_hcd               65536  1 ehci_pci
+usbcore               172032  10 uas,uvcvideo,rtsx_usb,usb_storage,ohci_hcd,ohci_pci,ehci_hcd,ehci_pci,xhci_hcd,xhci_pci
+usb_common             16384  1 usbcore
+i8042                  24576  1 ideapad_laptop
+serio                  20480  6 serio_raw,atkbd,i8042,psmouse

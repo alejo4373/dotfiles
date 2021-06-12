@@ -1,0 +1,561 @@
+06: PCI 00.0: 0600 Host bridge
+  SysFS ID: /devices/pci0000:00/0000:00:00.0
+  SysFS BusID: 0000:00:00.0
+  Hardware Class: bridge
+  Model: "AMD Family 14h Processor Root Complex"
+  Vendor: pci 0x1022 "AMD"
+  Device: pci 0x1510 "Family 14h Processor Root Complex"
+  SubVendor: pci 0x1022 "AMD"
+  SubDevice: pci 0x1510 
+  Module Alias: "pci:v00001022d00001510sv00001022sd00001510bc06sc00i00"
+
+07: PCI 01.0: 0300 VGA compatible controller (VGA)
+  SysFS ID: /devices/pci0000:00/0000:00:01.0
+  SysFS BusID: 0000:00:01.0
+  Hardware Class: graphics card
+  Model: "ATI Wrestler [Radeon HD 6290]"
+  Vendor: pci 0x1002 "ATI Technologies Inc"
+  Device: pci 0x9807 "Wrestler [Radeon HD 6290]"
+  SubVendor: pci 0x17aa "Lenovo"
+  SubDevice: pci 0x397f 
+  Driver: "fglrx_pci"
+  Driver Modules: "fglrx"
+  Memory Range: 0x80000000-0x8fffffff (ro,non-prefetchable)
+  I/O Ports: 0x3000-0x30ff (rw)
+  Memory Range: 0x90300000-0x9033ffff (rw,non-prefetchable)
+  IRQ: 30 (1 event)
+  I/O Ports: 0x3c0-0x3df (rw)
+  Module Alias: "pci:v00001002d00009807sv000017AAsd0000397Fbc03sc00i00"
+  Driver Info #0:
+    Driver Status: radeon is not active
+    Driver Activation Cmd: "modprobe radeon"
+  Driver Info #1:
+    Driver Status: fglrx is active
+    Driver Activation Cmd: "modprobe fglrx"
+
+08: PCI 01.1: 0403 Audio device
+  SysFS ID: /devices/pci0000:00/0000:00:01.1
+  SysFS BusID: 0000:00:01.1
+  Hardware Class: sound
+  Model: "ATI Wrestler HDMI Audio"
+  Vendor: pci 0x1002 "ATI Technologies Inc"
+  Device: pci 0x1314 "Wrestler HDMI Audio"
+  SubVendor: pci 0x17aa "Lenovo"
+  SubDevice: pci 0x397f 
+  Driver: "snd_hda_intel"
+  Driver Modules: "snd_hda_intel"
+  Memory Range: 0x90344000-0x90347fff (rw,non-prefetchable)
+  IRQ: 28 (40 events)
+  Module Alias: "pci:v00001002d00001314sv000017AAsd0000397Fbc04sc03i00"
+  Driver Info #0:
+    Driver Status: snd_hda_intel is active
+    Driver Activation Cmd: "modprobe snd_hda_intel"
+
+09: PCI 04.0: 0604 PCI bridge (Normal decode)
+  SysFS ID: /devices/pci0000:00/0000:00:04.0
+  SysFS BusID: 0000:00:04.0
+  Hardware Class: bridge
+  Model: "AMD Family 14h Processor Root Port"
+  Vendor: pci 0x1022 "AMD"
+  Device: pci 0x1512 "Family 14h Processor Root Port"
+  SubVendor: pci 0x1022 "AMD"
+  SubDevice: pci 0x1234 
+  Driver: "pcieport"
+  IRQ: 16 (683 events)
+  Module Alias: "pci:v00001022d00001512sv00001022sd00001234bc06sc04i00"
+  Driver Info #0:
+    Driver Status: shpchp is active
+    Driver Activation Cmd: "modprobe shpchp"
+
+10: PCI 10.0: 0c03 USB Controller (XHCI)
+  SysFS ID: /devices/pci0000:00/0000:00:10.0
+  SysFS BusID: 0000:00:10.0
+  Hardware Class: usb controller
+  Model: "AMD FCH USB XHCI Controller"
+  Vendor: pci 0x1022 "AMD"
+  Device: pci 0x7812 "FCH USB XHCI Controller"
+  SubVendor: pci 0x17aa "Lenovo"
+  SubDevice: pci 0x397f 
+  Revision: 0x03
+  Driver: "xhci_hcd"
+  Driver Modules: "xhci_pci"
+  Memory Range: 0x90348000-0x90349fff (rw,non-prefetchable)
+  IRQ: 18 (no events)
+  Module Alias: "pci:v00001022d00007812sv000017AAsd0000397Fbc0Csc03i30"
+  Driver Info #0:
+    Driver Status: xhci_pci is active
+    Driver Activation Cmd: "modprobe xhci_pci"
+
+11: PCI 11.0: 0106 SATA controller (AHCI 1.0)
+  SysFS ID: /devices/pci0000:00/0000:00:11.0
+  SysFS BusID: 0000:00:11.0
+  Hardware Class: storage
+  Model: "AMD FCH SATA Controller [AHCI mode]"
+  Vendor: pci 0x1022 "AMD"
+  Device: pci 0x7801 "FCH SATA Controller [AHCI mode]"
+  SubVendor: pci 0x17aa "Lenovo"
+  SubDevice: pci 0x397f 
+  Driver: "ahci"
+  Driver Modules: "ahci"
+  I/O Ports: 0x3118-0x311f (rw)
+  I/O Ports: 0x3124-0x3127 (rw)
+  I/O Ports: 0x3110-0x3117 (rw)
+  I/O Ports: 0x3120-0x3123 (rw)
+  I/O Ports: 0x3100-0x310f (rw)
+  Memory Range: 0x9034e000-0x9034e7ff (rw,non-prefetchable)
+  IRQ: 27 (18692 events)
+  Module Alias: "pci:v00001022d00007801sv000017AAsd0000397Fbc01sc06i01"
+  Driver Info #0:
+    Driver Status: ahci is active
+    Driver Activation Cmd: "modprobe ahci"
+
+12: PCI 12.0: 0c03 USB Controller (OHCI)
+  SysFS ID: /devices/pci0000:00/0000:00:12.0
+  SysFS BusID: 0000:00:12.0
+  Hardware Class: usb controller
+  Model: "AMD FCH USB OHCI Controller"
+  Vendor: pci 0x1022 "AMD"
+  Device: pci 0x7807 "FCH USB OHCI Controller"
+  SubVendor: pci 0x17aa "Lenovo"
+  SubDevice: pci 0x397f 
+  Revision: 0x11
+  Driver: "ohci-pci"
+  Driver Modules: "ohci_pci"
+  Memory Range: 0x9034d000-0x9034dfff (rw,non-prefetchable)
+  IRQ: 18 (no events)
+  Module Alias: "pci:v00001022d00007807sv000017AAsd0000397Fbc0Csc03i10"
+  Driver Info #0:
+    Driver Status: ohci-hcd is active
+    Driver Activation Cmd: "modprobe ohci-hcd"
+  Driver Info #1:
+    Driver Status: ohci_pci is active
+    Driver Activation Cmd: "modprobe ohci_pci"
+
+13: PCI 12.2: 0c03 USB Controller (EHCI)
+  SysFS ID: /devices/pci0000:00/0000:00:12.2
+  SysFS BusID: 0000:00:12.2
+  Hardware Class: usb controller
+  Model: "AMD FCH USB EHCI Controller"
+  Vendor: pci 0x1022 "AMD"
+  Device: pci 0x7808 "FCH USB EHCI Controller"
+  SubVendor: pci 0x17aa "Lenovo"
+  SubDevice: pci 0x397f 
+  Revision: 0x11
+  Driver: "ehci-pci"
+  Driver Modules: "ehci_pci"
+  Memory Range: 0x9034c000-0x9034c0ff (rw,non-prefetchable)
+  IRQ: 17 (36867 events)
+  Module Alias: "pci:v00001022d00007808sv000017AAsd0000397Fbc0Csc03i20"
+  Driver Info #0:
+    Driver Status: ehci-hcd is active
+    Driver Activation Cmd: "modprobe ehci-hcd"
+  Driver Info #1:
+    Driver Status: ehci_pci is active
+    Driver Activation Cmd: "modprobe ehci_pci"
+
+14: PCI 13.0: 0c03 USB Controller (OHCI)
+  SysFS ID: /devices/pci0000:00/0000:00:13.0
+  SysFS BusID: 0000:00:13.0
+  Hardware Class: usb controller
+  Model: "AMD FCH USB OHCI Controller"
+  Vendor: pci 0x1022 "AMD"
+  Device: pci 0x7807 "FCH USB OHCI Controller"
+  SubVendor: pci 0x17aa "Lenovo"
+  SubDevice: pci 0x397f 
+  Revision: 0x11
+  Driver: "ohci-pci"
+  Driver Modules: "ohci_pci"
+  Memory Range: 0x9034b000-0x9034bfff (rw,non-prefetchable)
+  IRQ: 18 (no events)
+  Module Alias: "pci:v00001022d00007807sv000017AAsd0000397Fbc0Csc03i10"
+  Driver Info #0:
+    Driver Status: ohci-hcd is active
+    Driver Activation Cmd: "modprobe ohci-hcd"
+  Driver Info #1:
+    Driver Status: ohci_pci is active
+    Driver Activation Cmd: "modprobe ohci_pci"
+
+15: PCI 13.2: 0c03 USB Controller (EHCI)
+  SysFS ID: /devices/pci0000:00/0000:00:13.2
+  SysFS BusID: 0000:00:13.2
+  Hardware Class: usb controller
+  Model: "AMD FCH USB EHCI Controller"
+  Vendor: pci 0x1022 "AMD"
+  Device: pci 0x7808 "FCH USB EHCI Controller"
+  SubVendor: pci 0x17aa "Lenovo"
+  SubDevice: pci 0x397f 
+  Revision: 0x11
+  Driver: "ehci-pci"
+  Driver Modules: "ehci_pci"
+  Memory Range: 0x9034a000-0x9034a0ff (rw,non-prefetchable)
+  IRQ: 17 (36867 events)
+  Module Alias: "pci:v00001022d00007808sv000017AAsd0000397Fbc0Csc03i20"
+  Driver Info #0:
+    Driver Status: ehci-hcd is active
+    Driver Activation Cmd: "modprobe ehci-hcd"
+  Driver Info #1:
+    Driver Status: ehci_pci is active
+    Driver Activation Cmd: "modprobe ehci_pci"
+
+16: PCI 14.0: 0c05 SMBus
+  SysFS ID: /devices/pci0000:00/0000:00:14.0
+  SysFS BusID: 0000:00:14.0
+  Hardware Class: unknown
+  Model: "AMD FCH SMBus Controller"
+  Vendor: pci 0x1022 "AMD"
+  Device: pci 0x780b "FCH SMBus Controller"
+  SubVendor: pci 0x17aa "Lenovo"
+  SubDevice: pci 0x397f 
+  Revision: 0x14
+  Module Alias: "pci:v00001022d0000780Bsv000017AAsd0000397Fbc0Csc05i00"
+  Driver Info #0:
+    Driver Status: i2c_piix4 is active
+    Driver Activation Cmd: "modprobe i2c_piix4"
+
+17: PCI 14.2: 0403 Audio device
+  SysFS ID: /devices/pci0000:00/0000:00:14.2
+  SysFS BusID: 0000:00:14.2
+  Hardware Class: sound
+  Model: "AMD FCH Azalia Controller"
+  Vendor: pci 0x1022 "AMD"
+  Device: pci 0x780d "FCH Azalia Controller"
+  SubVendor: pci 0x17aa "Lenovo"
+  SubDevice: pci 0x397f 
+  Revision: 0x01
+  Driver: "snd_hda_intel"
+  Driver Modules: "snd_hda_intel"
+  Memory Range: 0x90340000-0x90343fff (rw,non-prefetchable)
+  IRQ: 16 (683 events)
+  Module Alias: "pci:v00001022d0000780Dsv000017AAsd0000397Fbc04sc03i00"
+  Driver Info #0:
+    Driver Status: snd_hda_intel is active
+    Driver Activation Cmd: "modprobe snd_hda_intel"
+
+18: PCI 14.3: 0601 ISA bridge
+  SysFS ID: /devices/pci0000:00/0000:00:14.3
+  SysFS BusID: 0000:00:14.3
+  Hardware Class: bridge
+  Model: "AMD FCH LPC Bridge"
+  Vendor: pci 0x1022 "AMD"
+  Device: pci 0x780e "FCH LPC Bridge"
+  SubVendor: pci 0x17aa "Lenovo"
+  SubDevice: pci 0x397f 
+  Revision: 0x11
+  Module Alias: "pci:v00001022d0000780Esv000017AAsd0000397Fbc06sc01i00"
+
+19: PCI 14.4: 0604 PCI bridge (Subtractive decode)
+  SysFS ID: /devices/pci0000:00/0000:00:14.4
+  SysFS BusID: 0000:00:14.4
+  Hardware Class: bridge
+  Model: "AMD FCH PCI Bridge"
+  Vendor: pci 0x1022 "AMD"
+  Device: pci 0x780f "FCH PCI Bridge"
+  Revision: 0x40
+  Module Alias: "pci:v00001022d0000780Fsv00000000sd00000000bc06sc04i01"
+
+20: PCI 15.0: 0604 PCI bridge (Normal decode)
+  SysFS ID: /devices/pci0000:00/0000:00:15.0
+  SysFS BusID: 0000:00:15.0
+  Hardware Class: bridge
+  Model: "AMD Hudson PCI to PCI bridge (PCIE port 0)"
+  Vendor: pci 0x1022 "AMD"
+  Device: pci 0x43a0 "Hudson PCI to PCI bridge (PCIE port 0)"
+  SubVendor: pci 0x1022 "AMD"
+  SubDevice: pci 0x0000 
+  Driver: "pcieport"
+  IRQ: 16 (683 events)
+  Module Alias: "pci:v00001022d000043A0sv00001022sd00000000bc06sc04i00"
+  Driver Info #0:
+    Driver Status: shpchp is active
+    Driver Activation Cmd: "modprobe shpchp"
+
+21: PCI 15.1: 0604 PCI bridge (Normal decode)
+  SysFS ID: /devices/pci0000:00/0000:00:15.1
+  SysFS BusID: 0000:00:15.1
+  Hardware Class: bridge
+  Model: "AMD Hudson PCI to PCI bridge (PCIE port 1)"
+  Vendor: pci 0x1022 "AMD"
+  Device: pci 0x43a1 "Hudson PCI to PCI bridge (PCIE port 1)"
+  SubVendor: pci 0x1022 "AMD"
+  SubDevice: pci 0x0000 
+  Driver: "pcieport"
+  IRQ: 16 (683 events)
+  Module Alias: "pci:v00001022d000043A1sv00001022sd00000000bc06sc04i00"
+  Driver Info #0:
+    Driver Status: shpchp is active
+    Driver Activation Cmd: "modprobe shpchp"
+
+22: PCI 18.0: 0600 Host bridge
+  SysFS ID: /devices/pci0000:00/0000:00:18.0
+  SysFS BusID: 0000:00:18.0
+  Hardware Class: bridge
+  Model: "AMD Family 12h/14h Processor Function 0"
+  Vendor: pci 0x1022 "AMD"
+  Device: pci 0x1700 "Family 12h/14h Processor Function 0"
+  Revision: 0x43
+  Module Alias: "pci:v00001022d00001700sv00000000sd00000000bc06sc00i00"
+
+23: PCI 18.1: 0600 Host bridge
+  SysFS ID: /devices/pci0000:00/0000:00:18.1
+  SysFS BusID: 0000:00:18.1
+  Hardware Class: bridge
+  Model: "AMD Family 12h/14h Processor Function 1"
+  Vendor: pci 0x1022 "AMD"
+  Device: pci 0x1701 "Family 12h/14h Processor Function 1"
+  Module Alias: "pci:v00001022d00001701sv00000000sd00000000bc06sc00i00"
+
+24: PCI 18.2: 0600 Host bridge
+  SysFS ID: /devices/pci0000:00/0000:00:18.2
+  SysFS BusID: 0000:00:18.2
+  Hardware Class: bridge
+  Model: "AMD Family 12h/14h Processor Function 2"
+  Vendor: pci 0x1022 "AMD"
+  Device: pci 0x1702 "Family 12h/14h Processor Function 2"
+  Module Alias: "pci:v00001022d00001702sv00000000sd00000000bc06sc00i00"
+
+25: PCI 18.3: 0600 Host bridge
+  SysFS ID: /devices/pci0000:00/0000:00:18.3
+  SysFS BusID: 0000:00:18.3
+  Hardware Class: bridge
+  Model: "AMD Family 12h/14h Processor Function 3"
+  Vendor: pci 0x1022 "AMD"
+  Device: pci 0x1703 "Family 12h/14h Processor Function 3"
+  Driver: "k10temp"
+  Driver Modules: "k10temp"
+  Module Alias: "pci:v00001022d00001703sv00000000sd00000000bc06sc00i00"
+  Driver Info #0:
+    Driver Status: k10temp is active
+    Driver Activation Cmd: "modprobe k10temp"
+
+26: PCI 18.4: 0600 Host bridge
+  SysFS ID: /devices/pci0000:00/0000:00:18.4
+  SysFS BusID: 0000:00:18.4
+  Hardware Class: bridge
+  Model: "AMD Family 12h/14h Processor Function 4"
+  Vendor: pci 0x1022 "AMD"
+  Device: pci 0x1704 "Family 12h/14h Processor Function 4"
+  Module Alias: "pci:v00001022d00001704sv00000000sd00000000bc06sc00i00"
+
+27: PCI 18.5: 0600 Host bridge
+  SysFS ID: /devices/pci0000:00/0000:00:18.5
+  SysFS BusID: 0000:00:18.5
+  Hardware Class: bridge
+  Model: "AMD Family 12h/14h Processor Function 6"
+  Vendor: pci 0x1022 "AMD"
+  Device: pci 0x1718 "Family 12h/14h Processor Function 6"
+  Module Alias: "pci:v00001022d00001718sv00000000sd00000000bc06sc00i00"
+
+28: PCI 18.6: 0600 Host bridge
+  SysFS ID: /devices/pci0000:00/0000:00:18.6
+  SysFS BusID: 0000:00:18.6
+  Hardware Class: bridge
+  Model: "AMD Family 12h/14h Processor Function 5"
+  Vendor: pci 0x1022 "AMD"
+  Device: pci 0x1716 "Family 12h/14h Processor Function 5"
+  Module Alias: "pci:v00001022d00001716sv00000000sd00000000bc06sc00i00"
+
+29: PCI 18.7: 0600 Host bridge
+  SysFS ID: /devices/pci0000:00/0000:00:18.7
+  SysFS BusID: 0000:00:18.7
+  Hardware Class: bridge
+  Model: "AMD Family 12h/14h Processor Function 7"
+  Vendor: pci 0x1022 "AMD"
+  Device: pci 0x1719 "Family 12h/14h Processor Function 7"
+  Module Alias: "pci:v00001022d00001719sv00000000sd00000000bc06sc00i00"
+
+30: PCI 300.0: 0200 Ethernet controller
+  SysFS ID: /devices/pci0000:00/0000:00:15.0/0000:03:00.0
+  SysFS BusID: 0000:03:00.0
+  Hardware Class: network
+  Model: "Realtek RTL8101E/RTL8102E PCI Express Fast Ethernet controller"
+  Vendor: pci 0x10ec "Realtek Semiconductor Co., Ltd."
+  Device: pci 0x8136 "RTL8101E/RTL8102E PCI Express Fast Ethernet controller"
+  SubVendor: pci 0x17aa "Lenovo"
+  SubDevice: pci 0x397f 
+  Revision: 0x05
+  Driver: "r8169"
+  Driver Modules: "r8169"
+  Device File: enp3s0
+  I/O Ports: 0x2000-0x2fff (rw)
+  Memory Range: 0x90004000-0x90004fff (ro,non-prefetchable)
+  Memory Range: 0x90000000-0x90003fff (ro,non-prefetchable)
+  IRQ: 29 (no events)
+  HW Address: b8:88:e3:88:51:d6
+  Link detected: no
+  Module Alias: "pci:v000010ECd00008136sv000017AAsd0000397Fbc02sc00i00"
+  Driver Info #0:
+    Driver Status: r8169 is active
+    Driver Activation Cmd: "modprobe r8169"
+  Attached to: #20 (PCI bridge)
+
+31: PCI 700.0: 0200 Ethernet controller
+  SysFS ID: /devices/pci0000:00/0000:00:15.1/0000:07:00.0
+  SysFS BusID: 0000:07:00.0
+  Hardware Class: network
+  Model: "Broadcom BCM4313 802.11bgn Wireless Network Adapter"
+  Vendor: pci 0x14e4 "Broadcom"
+  Device: pci 0x4727 "BCM4313 802.11bgn Wireless Network Adapter"
+  SubVendor: pci 0x14e4 "Broadcom"
+  SubDevice: pci 0x0587 
+  Revision: 0x01
+  Driver: "wl"
+  Driver Modules: "wl"
+  Device File: wlp7s0
+  Memory Range: 0x90100000-0x90103fff (rw,non-prefetchable)
+  IRQ: 17 (36867 events)
+  HW Address: c0:14:3d:c9:d7:4b
+  Link detected: yes
+  Module Alias: "pci:v000014E4d00004727sv000014E4sd00000587bc02sc80i00"
+  Driver Info #0:
+    Driver Status: bcma is not active
+    Driver Activation Cmd: "modprobe bcma"
+  Driver Info #1:
+    Driver Status: wl is active
+    Driver Activation Cmd: "modprobe wl"
+  Attached to: #21 (PCI bridge)
+03: USB 00.0: 10a00 Hub
+  SysFS ID: /devices/pci0000:00/0000:00:12.0/usb3/3-0:1.0
+  SysFS BusID: 3-0:1.0
+  Hardware Class: hub
+  Model: "Linux Foundation 1.1 root hub"
+  Hotplug: USB
+  Vendor: usb 0x1d6b "Linux Foundation"
+  Device: usb 0x0001 "1.1 root hub"
+  Revision: "4.04"
+  Serial ID: "0000:00:12.0"
+  Driver: "hub"
+  Driver Modules: "usbcore"
+  Speed: 12 Mbps
+  Module Alias: "usb:v1D6Bp0001d0404dc09dsc00dp00ic09isc00ip00in00"
+  Driver Info #0:
+    Driver Status: usbcore is active
+    Driver Activation Cmd: "modprobe usbcore"
+
+04: USB 00.0: 10a00 Hub
+  SysFS ID: /devices/pci0000:00/0000:00:10.0/usb4/4-0:1.0
+  SysFS BusID: 4-0:1.0
+  Hardware Class: hub
+  Model: "Linux Foundation 2.0 root hub"
+  Hotplug: USB
+  Vendor: usb 0x1d6b "Linux Foundation"
+  Device: usb 0x0002 "2.0 root hub"
+  Revision: "4.04"
+  Serial ID: "0000:00:10.0"
+  Driver: "hub"
+  Driver Modules: "usbcore"
+  Speed: 480 Mbps
+  Module Alias: "usb:v1D6Bp0002d0404dc09dsc00dp01ic09isc00ip00in00"
+  Driver Info #0:
+    Driver Status: usbcore is active
+    Driver Activation Cmd: "modprobe usbcore"
+
+05: USB 00.0: 10a00 Hub
+  SysFS ID: /devices/pci0000:00/0000:00:10.0/usb5/5-0:1.0
+  SysFS BusID: 5-0:1.0
+  Hardware Class: hub
+  Model: "Linux Foundation 3.0 root hub"
+  Hotplug: USB
+  Vendor: usb 0x1d6b "Linux Foundation"
+  Device: usb 0x0003 "3.0 root hub"
+  Revision: "4.04"
+  Serial ID: "0000:00:10.0"
+  Driver: "hub"
+  Driver Modules: "usbcore"
+  Module Alias: "usb:v1D6Bp0003d0404dc09dsc00dp03ic09isc00ip00in00"
+  Driver Info #0:
+    Driver Status: usbcore is active
+    Driver Activation Cmd: "modprobe usbcore"
+
+06: USB 00.0: 10a00 Hub
+  SysFS ID: /devices/pci0000:00/0000:00:13.0/usb6/6-0:1.0
+  SysFS BusID: 6-0:1.0
+  Hardware Class: hub
+  Model: "Linux Foundation 1.1 root hub"
+  Hotplug: USB
+  Vendor: usb 0x1d6b "Linux Foundation"
+  Device: usb 0x0001 "1.1 root hub"
+  Revision: "4.04"
+  Serial ID: "0000:00:13.0"
+  Driver: "hub"
+  Driver Modules: "usbcore"
+  Speed: 12 Mbps
+  Module Alias: "usb:v1D6Bp0001d0404dc09dsc00dp00ic09isc00ip00in00"
+  Driver Info #0:
+    Driver Status: usbcore is active
+    Driver Activation Cmd: "modprobe usbcore"
+
+07: USB 00.0: 10a00 Hub
+  SysFS ID: /devices/pci0000:00/0000:00:12.2/usb1/1-0:1.0
+  SysFS BusID: 1-0:1.0
+  Hardware Class: hub
+  Model: "Linux Foundation 2.0 root hub"
+  Hotplug: USB
+  Vendor: usb 0x1d6b "Linux Foundation"
+  Device: usb 0x0002 "2.0 root hub"
+  Revision: "4.04"
+  Serial ID: "0000:00:12.2"
+  Driver: "hub"
+  Driver Modules: "usbcore"
+  Speed: 480 Mbps
+  Module Alias: "usb:v1D6Bp0002d0404dc09dsc00dp00ic09isc00ip00in00"
+  Driver Info #0:
+    Driver Status: usbcore is active
+    Driver Activation Cmd: "modprobe usbcore"
+
+08: USB 00.0: 0000 Unclassified device
+  SysFS ID: /devices/pci0000:00/0000:00:12.2/usb1/1-4/1-4:1.0
+  SysFS BusID: 1-4:1.0
+  Hardware Class: unknown
+  Model: "Chicony Electronics Lenovo EasyCamera"
+  Hotplug: USB
+  Vendor: usb 0x04f2 "Chicony Electronics Co., Ltd"
+  Device: usb 0xb2e2 "Lenovo EasyCamera"
+  Revision: "60.66"
+  Driver: "uvcvideo"
+  Driver Modules: "uvcvideo"
+  Device File: /dev/input/event12
+  Device Files: /dev/input/event12, /dev/input/by-id/usb-Chicony_Corp._Lenovo_EasyCamera-event-if00, /dev/input/by-path/pci-0000:00:12.2-usb-0:4:1.0-event
+  Device Number: char 13:76
+  Speed: 480 Mbps
+  Module Alias: "usb:v04F2pB2E2d6066dcEFdsc02dp01ic0Eisc01ip00in00"
+  Driver Info #0:
+    Driver Status: uvcvideo is active
+    Driver Activation Cmd: "modprobe uvcvideo"
+  Attached to: #7 (Hub)
+
+10: USB 00.0: 10a00 Hub
+  SysFS ID: /devices/pci0000:00/0000:00:13.2/usb2/2-0:1.0
+  SysFS BusID: 2-0:1.0
+  Hardware Class: hub
+  Model: "Linux Foundation 2.0 root hub"
+  Hotplug: USB
+  Vendor: usb 0x1d6b "Linux Foundation"
+  Device: usb 0x0002 "2.0 root hub"
+  Revision: "4.04"
+  Serial ID: "0000:00:13.2"
+  Driver: "hub"
+  Driver Modules: "usbcore"
+  Speed: 480 Mbps
+  Module Alias: "usb:v1D6Bp0002d0404dc09dsc00dp00ic09isc00ip00in00"
+  Driver Info #0:
+    Driver Status: usbcore is active
+    Driver Activation Cmd: "modprobe usbcore"
+
+11: USB 00.0: 0000 Unclassified device
+  SysFS ID: /devices/pci0000:00/0000:00:13.2/usb2/2-1/2-1:1.0
+  SysFS BusID: 2-1:1.0
+  Hardware Class: unknown
+  Model: "Realtek RTS5129 Card Reader Controller"
+  Hotplug: USB
+  Vendor: usb 0x0bda "Realtek Semiconductor Corp."
+  Device: usb 0x0129 "RTS5129 Card Reader Controller"
+  Revision: "39.60"
+  Serial ID: "20100201396000000"
+  Driver: "rtsx_usb"
+  Driver Modules: "rtsx_usb"
+  Speed: 480 Mbps
+  Module Alias: "usb:v0BDAp0129d3960dcFFdscFFdpFFicFFisc06ip50in00"
+  Driver Info #0:
+    Driver Status: rtsx_usb is active
+    Driver Activation Cmd: "modprobe rtsx_usb"
+  Attached to: #10 (Hub)
