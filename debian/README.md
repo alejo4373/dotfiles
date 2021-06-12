@@ -23,9 +23,23 @@ There are two drivers for the synaptics trackpad `libinput` and `xserver-xorg-in
 ## Other
 
 1. Install git, curl, htop, zsh, vim, mpv
-2. Install oh-my-zsh and symlink zsh/.zshrc from this repo to ~/.zshrc
-3. Install youtube-dl from https://ytdl-org.github.io/youtube-dl/download.html
-4. Install nvm from GitHub and then install `npm install --lts`
+2. Install youtube-dl from https://ytdl-org.github.io/youtube-dl/download.html
+3. Install nvm from GitHub and then install `npm install --lts`
+4. Install VScode from official site.
+
+### zsh
+1. Install oh-my-zsh and symlink zsh/.zshrc from this repo to ~/.zshrc
+2. Install zsh-completions from https://github.com/zsh-users/zsh-completions
+
+### VSCode
+
+Extensions:
+* Code Spell Checker
+* pgsql
+* Dracula Official Theme
+* Rainbow Brakets
+* Vim (vscodevim)
+* Live Server
 
 ## Shortcuts that I miss from Mac
 
