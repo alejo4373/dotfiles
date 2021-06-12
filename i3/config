@@ -9,7 +9,7 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod1
+set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -69,7 +69,7 @@ bindsym $mod+g split h
 bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
-bindsym $mod+Mod4+f fullscreen
+bindsym $mod+Mod1+f fullscreen
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
@@ -172,9 +172,9 @@ client.urgent  		$urgent-bg-color	$urgent-bg-color	$text-color     	#5294E2
 bindsym $mod+space exec dmenu_run -b -fn 'terminus-font:normal:pixelsize=12'
 
 # kill focused window
-bindsym $mod+q kill 
+bindsym Mod1+q kill 
 
-bindsym $mod+Tab workspace next
+bindsym Mod1+Tab workspace next
 bindsym Mod1+grave workspace prev
 bindsym Print exec gnome-screenshot -i
 bindsym XF86Display exec xrandr --output VGA-1 --auto --pos 0x0 --right-of LVDS-1 ##Above normal
@@ -211,8 +211,8 @@ for_window [class="^.*"] border pixel 1
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        mode hide
-        hidden_state hide
+        mode dock
+	position top
 #        status_command i3blocks -c ~/.config/i3/i3blocks.conf -vv
         status_command i3status  -c ~/.config/i3/i3status.conf 
       
