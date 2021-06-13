@@ -169,7 +169,7 @@ client.focused_inactive $inactive-bg-color	$inactive-bg-color	$inactive-text-col
 client.urgent  		$urgent-bg-color	$urgent-bg-color	$text-color     	#5294E2
 
 ## Keybinds ##
-bindsym $mod+space exec dmenu_run -b -fn 'terminus-font:normal:pixelsize=12'
+bindsym Mod1+space exec dmenu_run -b -fn 'terminus-font:normal:pixelsize=12'
 
 # kill focused window
 bindsym Mod1+q kill 
