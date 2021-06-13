@@ -1,16 +1,5 @@
 # My binaries
   export PATH=$PATH:$HOME/bin/
-  export NPM_PACKAGES="${HOME}/.npm-packages"
-
-# Path to npm modules
-  export PATH="$PATH:$NPM_PACKAGES/bin"
-
-# Unset manpath so we can inherit from /etc/manpath via the `manpath` command
-  unset MANPATH # delete if you already modified MANPATH elsewhere in your config
-  export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
-
-# Path to Node binaries
-# export PATH=$PATH:$HOME/bin/programs/node/bin
 
 # Path Ruby binaries
 # export PATH=$PATH:$HOME/.rubies/ruby-2.5.1/bin
