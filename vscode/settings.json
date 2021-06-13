@@ -135,5 +135,6 @@
     "markdown.preview.fontSize": 12,
     "terminal.integrated.tabs.enabled": true,
     "workbench.editor.untitled.hint": "hidden",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "window.zoomLevel": -1
 }
