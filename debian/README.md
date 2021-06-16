@@ -41,9 +41,24 @@ Extensions:
 * Vim (vscodevim)
 * Live Server
 
+### Postgres
+
+* Use Postgres 12 or 13 because ealier versions don't support generated columns, which I'm using in a few of my apps.
+* This usually requires postgres to be installed from the official site and not from the distributions repositories.
+* Make sure postgres is running in port `5432` by checking `/etc/postgresql/13/main/postgres.conf`
+* Log into the database with user `postgres` via `sudo -u postgres psql`
+* Create a database user/role for the current Debian user with `CREATE USER alejandro WITH CREATEDB PASSWORD NULL`
+* `\du` lists all roles
+* Create default database for current Debian user with the same name of the user via `createdb alejandro`
+* Edit `/etc/postgresql/13/main/pg_hba.conf` to trust local tcp connections
+```
+# IPv4 local connections:
+host    all             all             127.0.0.1/32            trust
+```
+
 ## Shortcuts that I miss from Mac
 
-* `ALT/CMD + SHIFT + [ | ]` to switch tabs in the browser or the iterm. Partically mitigated via Vimium extension key mapping. It doesn't work if there's a tab where the extension cannot run, like chrome://extensions or even the chrome.google.com (extensions store) 
+* `ALT/CMD + SHIFT + [ | ]` to switch tabs in the browser or the iterm. Partically mitigated via Vimium extension key mapping. It doesn't work if there's a tab where the extension cannot run, like chrome://extensions or even the chrome.google.com (extensions store)
 * `ALT/CMD + [|]` to go back or forward in the browser. NOT MITIGATED 
 * `ALT/CMD + SPACE` to launch applications via Spotlight (mac). MITIGATED via i3 keybindings running d-menu
 * `CMD + OPTION + F` to make a window full screen via the Spectacle App. MITIGATED via i3 keybindings 
