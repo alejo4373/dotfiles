@@ -56,6 +56,10 @@ Extensions:
 host    all             all             127.0.0.1/32            trust
 ```
 
+### Emojies on Linux
+* An emoji font must be installed. I used `fonts-noto-color-emoji` from the official Debian repos (maybe the keyboard already includes them? see below)
+* Installed [`emoji-keyboard`](https://github.com/OzymandiasTheGreat/emoji-keyboard) from and must be run on startup, then keyboard shortcut ctrl+super+spacebar opens the virtual emoji keyboard
+
 ## Shortcuts that I miss from Mac
 
 * `ALT/CMD + SHIFT + [ | ]` to switch tabs in the browser or the iterm. Partically mitigated via Vimium extension key mapping. It doesn't work if there's a tab where the extension cannot run, like chrome://extensions or even the chrome.google.com (extensions store)
