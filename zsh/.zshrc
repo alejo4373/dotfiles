@@ -9,8 +9,14 @@
 #  export PATH=$PATH:$HOME/bin/programs/go/bin
 #  export GOPATH=$HOME/go/
 
-# Path to binaries installed by python & aws-cli
+# Path to binaries installed by python & aws-cli for linux
 #  export PATH=$PATH:$HOME/.local/bin
+
+# Path to binaries installed by python for MacOsx
+export PATH=$PATH:$HOME/Library/Python/3.10/bin
+
+# Add Elasticbeanstalk binraries to PATH. Used eb to deploy the Pursuit-gong app to aws
+export PATH=$PATH:$HOME/.ebcli-virtual-env/executables
 
 # Path to ESP32 Tools 
   #Toolchain 
@@ -113,12 +119,32 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ns="npm start"
+alias ys="yarn start"
 alias nsd="npm run start:dev"
 alias nt="npm test"
+alias yda="yarn dev:app" # Run flowcode app in development
+alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+alias flow_clean="cd ~/code/flow && rm -rf apps/app/.next" 
+alias flow_clean_and_install="flow_clean && rm -rf node_modules && yarn install"
+
+# Functions (to avoid quotes scape hoops)
+git_status_ls() {
+  git status -s | awk '{if ($1 != "D") print $2}'
+}
 
 # Startup scripts
 #sh ~/dotfiles/startup/vscode_settings.sh #Keep my vscode setting on Mac at 42
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+#export NVM_DIR="$HOME/.nvm" Skip, trying out Volta
+#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Enable Volta 
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/alejandrofranco/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/alejandrofranco/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/alejandrofranco/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/alejandrofranco/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
