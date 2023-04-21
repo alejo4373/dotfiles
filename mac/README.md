@@ -23,6 +23,12 @@
   - Sym link settings and keybindings
     - `ln -s ~/code/dotfiles/vscode/keybindings.mac.json ~/Library/Application\ Support/Code/User/keybindings.json`
     - `ln -s ~/code/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json`
+- volta.sh. Javascript Tool Manager
+  - `volta list` as of 04/21/2023
+  ```
+    Node: v16.15.1 (default)
+    Yarn: v1.22.10 (default)
+  ```
 
 ### Visual Studio Extensions
 
