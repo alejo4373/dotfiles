@@ -19,8 +19,12 @@
 - Background Music. To control the volume of independent apps.
 - oh-my-zsh
   - Symbolic link the themes directory. `ln -s ~/code/dotfiles/zsh/themes ~/.oh-my-zsh/custom/themes`
+- VS Code
+  - Sym link settings and keybindings
+    - `ln -s ~/code/dotfiles/vscode/keybindings.mac.json ~/Library/Application\ Support/Code/User/keybindings.json`
+    - `ln -s ~/code/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json`
 
-### Visual Studio Extentions
+### Visual Studio Extensions
 
 - Code Spell Checker
 - Dracula Official theme
