@@ -1,6 +1,9 @@
 # Apps I use on Mac
 
-- Raycast
+- `xcode-select --install` xcode command line tools
+- brew.sh. Package manager for mac
+- Raycast.
+  - Raycast.rayconfig file has my extensions and settings for raycast
 - Kap for screenrecording
 - Captin. For knowing when I have caps on
 - Github desktop
