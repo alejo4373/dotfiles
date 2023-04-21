@@ -17,6 +17,8 @@
 - Twingate
 - ExpressVPN
 - Background Music. To control the volume of independent apps.
+- oh-my-zsh
+  - Symbolic link the themes directory. `ln -s ~/code/dotfiles/zsh/themes ~/.oh-my-zsh/custom/themes`
 
 ### Visual Studio Extentions
 
