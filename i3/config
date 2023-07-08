@@ -181,16 +181,19 @@ bindsym XF86Display exec xrandr --output VGA-1 --auto --pos 0x0 --right-of LVDS-
 bindsym XF86Launch1 exec voice-assistant
 bindsym Mod1+XF86Launch1 exec stop-voice-assistant 
 
+## Launch volume control on i3bar
+exec --no-startup-id volumeicon
+
 ## Volume Keybindings if using only ALSA
-#bindsym XF86AudioRaiseVolume exec amixer -qc 1 set Master 2dB+ unmute
-#bindsym XF86AudioLowerVolume exec amixer -qc 1 set Master 2dB- unmute
-#bindsym XF86AudioMute exec amixer -qc 1 set Master toggle
-#bindsym XF86AudioMute exec echo "key pressed" > /home/alejandro/mute_pressed.txt
+# bindsym XF86AudioRaiseVolume exec amixer -qc 1 set Master 2dB+ unmute
+# bindsym XF86AudioLowerVolume exec amixer -qc 1 set Master 2dB- unmute
+# bindsym XF86AudioMute exec amixer -qc 1 set Master toggle
+# bindsym XF86AudioMute exec echo "key pressed" > /home/alejandro/mute_pressed.txt
 
 ## Volume Keybindings if using PulseAudio
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +10%
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -10%
-bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
+# bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +10%
+# bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -10%
+# bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
 
 
 ## Startup ##
