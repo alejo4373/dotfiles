@@ -12,10 +12,11 @@
 # Path to binaries installed by python & aws-cli for linux
 #  export PATH=$PATH:$HOME/.local/bin
 
-# Path to binaries installed by python for MacOsx
-export PATH=$PATH:$HOME/Library/Python/3.10/bin
+# Path to binaries installed by python via Homebrew for MacOs
+HOMEBREW_PYTHON_PATH=$(brew --prefix python)/libexec/bin
+export PATH=$PATH:$HOMEBREW_PYTHON_PATH
 
-# Add Elasticbeanstalk binraries to PATH. Used eb to deploy the Pursuit-gong app to aws
+ # Add Elasticbeanstalk binraries to PATH. Used eb to deploy the Pursuit-gong app to aws
 export PATH=$PATH:$HOME/.ebcli-virtual-env/executables
 
 # Path to ESP32 Tools 
@@ -28,6 +29,9 @@ export PATH=$PATH:$HOME/.ebcli-virtual-env/executables
 # Volta (for nodejs and yarn binaries)
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
+
+# Add Postgres binaries to path
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 
  #Path to your oh-my-zsh installation.
   export ZSH=$HOME/.oh-my-zsh
