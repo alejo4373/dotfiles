@@ -27,8 +27,9 @@ export PATH=$PATH:$HOME/.ebcli-virtual-env/executables
 #
 
 # Volta (for nodejs and yarn binaries)
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
+# Disabling volta because I'm working on a project that is setup with nvm for HDFusion LLC
+#export VOLTA_HOME="$HOME/.volta 
+#export PATH="$VOLTA_HOME/bin:$PATH"
 
 # Add Postgres binaries to path
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
@@ -144,13 +145,10 @@ git_status_ls() {
 # Startup scripts
 #sh ~/dotfiles/startup/vscode_settings.sh #Keep my vscode setting on Mac at 42
 
-#export NVM_DIR="$HOME/.nvm" Skip, trying out Volta
-#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# Enable Volta 
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/alejandrofranco/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/alejandrofranco/Downloads/google-cloud-sdk/path.zsh.inc'; fi
