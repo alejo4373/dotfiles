@@ -34,6 +34,9 @@ export PATH=$PATH:$HOME/.ebcli-virtual-env/executables
 # Add Postgres binaries to path
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 
+# Add docker-compose to PATH
+export PATH=$PATH:/Users/alejandrofranco/.docker/cli-plugins
+
  #Path to your oh-my-zsh installation.
   export ZSH=$HOME/.oh-my-zsh
 
