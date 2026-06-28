@@ -1,1 +1,7 @@
 .DS_Store
+
+## Fish variables that should never be pushed
+fish_variables
+*.local.fish
+secrets.fish
+private.fish
