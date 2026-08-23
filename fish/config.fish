@@ -1,9 +1,9 @@
 ## On remote hosts is preferred a single tmux session we reattach to
 ## Locally not as good
-if status is-interactive
-	and not set -q TMUX
-	exec tmux new-session
-end
+#  if status is-interactive
+#    and not set -q TMUX
+#    exec tmux new-session
+#  end
 
 if status is-interactive
 
@@ -34,6 +34,5 @@ if status is-interactive
 	abbr --add ns npm start
 	abbr --add nr npm run
 	abbr --add pw playwright-cli
-	abbr --add tailscale "/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 end
 
