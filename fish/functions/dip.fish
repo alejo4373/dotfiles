@@ -1,0 +1,13 @@
+function dip --description 'Stop SSH port forwards'
+    test (count $argv) -gt 0; or begin
+        echo 'Usage: dip <port1> [port2] ...'
+        return 1
+    end
+    for port in $argv
+        if command pkill -f "ssh.*-L $port:localhost:$port"
+            echo "Stopped forwarding port $port"
+        else
+            echo "No forwarding on port $port"
+        end
+    end
+end

@@ -2,15 +2,14 @@
   export PATH=$PATH:$HOME/bin/
 
 # Path Ruby binaries
-# export PATH=$PATH:$HOME/.rubies/ruby-2.5.1/bin
-# export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.0.0/bin:/Users/alejandro/.gem/ruby/3.0.0/bin:$PATH"
+export PATH=/opt/homebrew/opt/ruby/bin:$PATH
 
 # Path go binaries
 #  export PATH=$PATH:$HOME/bin/programs/go/bin
 #  export GOPATH=$HOME/go/
 
 # Path to binaries installed by python & aws-cli for linux
-#  export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:$HOME/.local/bin
 
 # Path to binaries installed by python via Homebrew for MacOs
 HOMEBREW_PYTHON_PATH=$(brew --prefix python)/libexec/bin
@@ -27,9 +26,9 @@ export PATH=$PATH:$HOME/.ebcli-virtual-env/executables
 #
 
 # Volta (for nodejs and yarn binaries)
-# Disabling volta because I'm working on a project that is setup with nvm for HDFusion LLC
-#export VOLTA_HOME="$HOME/.volta 
-#export PATH="$VOLTA_HOME/bin:$PATH"
+# Jan 2025 - Disabling volta because I'm working on a project that is setup with nvm for HDFusion LLC
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
 
 # Add Postgres binaries to path
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
@@ -52,6 +51,7 @@ bindkey -v
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="amuse-alejo"
+ALEJO_THEME="dark"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -129,16 +129,16 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
+alias zshconfig="vim ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ns="npm start"
-alias ys="yarn start"
-alias nsd="npm run start:dev"
+alias nrd="npm run clean && npm run dev"
+alias ntc="npx tsc --noEmit"
 alias nt="npm test"
-alias yda="yarn dev:app" # Run flowcode app in development
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
-alias flow_clean="cd ~/code/flow && rm -rf apps/app/.next" 
-alias flow_clean_and_install="flow_clean && rm -rf node_modules && yarn install"
+alias nr="npm run"
+alias pwcli="playwright-cli"
+alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 
 # Functions (to avoid quotes scape hoops)
 git_status_ls() {
@@ -148,9 +148,10 @@ git_status_ls() {
 # Startup scripts
 #sh ~/dotfiles/startup/vscode_settings.sh #Keep my vscode setting on Mac at 42
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# July 2025 - Disabling nvm in favor of volta por personal projects
+#export NVM_DIR="$HOME/.nvm"
+#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
 # The next line updates PATH for the Google Cloud SDK.
@@ -158,3 +159,6 @@ if [ -f '/Users/alejandrofranco/Downloads/google-cloud-sdk/path.zsh.inc' ]; then
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/alejandrofranco/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/alejandrofranco/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+. "$HOME/.local/bin/env"
+export PATH="$HOME/.dotnet/tools:$PATH"

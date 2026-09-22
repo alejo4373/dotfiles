@@ -2,6 +2,7 @@
     "profiles": [
         {
             "name": "Logitec Keyboard",
+            "selected": true,
             "virtual_hid_keyboard": { "keyboard_type_v2": "iso" }
         },
         {
@@ -22,7 +23,6 @@
                 }
             ],
             "name": "Built-in Apple Keyboard",
-            "selected": true,
             "virtual_hid_keyboard": { "keyboard_type_v2": "iso" }
         }
     ]

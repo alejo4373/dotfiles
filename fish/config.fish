@@ -36,3 +36,8 @@ if status is-interactive
 	abbr --add pw playwright-cli
 end
 
+# OpenClaw completion
+test -f "$HOME/.openclaw/completions/openclaw.fish"; and source "$HOME/.openclaw/completions/openclaw.fish"
+
+# DevLens CLI
+fish_add_path "$HOME/.devlens/bin"
