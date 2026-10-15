@@ -10,7 +10,7 @@ auto_switch = false
 [theme.custom]
 # The active tab is drawn as panel_bg text on an accent background, so panel_bg
 # has to be dark for it to read - same colors as status-left's "#[fg=black,bg=blue]"
-panel_bg = "black"
+#panel_bg = "black"
 
 [terminal]
 # Matches -c "#{pane_current_path}" on every split, window, and session
@@ -31,8 +31,8 @@ split_vertical = ["prefix+v", "alt+shift+enter"]
 close_pane = ["prefix+x", "alt+esc"]
 zoom = "prefix+z"
 last_pane = "prefix+;"
-previous_agent = "prefix+shift+left"
-next_agent = "prefix+shift+right"
+previous_agent = "prefix+<"
+next_agent = "prefix+>"
 
 focus_pane_left = "ctrl+alt+left"
 focus_pane_down = "ctrl+alt+down"
@@ -74,8 +74,15 @@ key = "prefix+shift+t"
 type = "shell"
 command = "herdr pane move $HERDR_ACTIVE_PANE_ID --new-tab --focus"
 
+# New tab with Claude Code already running in it (no tmux equivalent)
+[[keys.command]]
+key = "prefix+a"
+type = "shell"
+description = "new tab running claude"
+command = "pane=$($HERDR_BIN_PATH tab create --focus | jq -r .result.root_pane.pane_id) && $HERDR_BIN_PATH pane run \"$pane\" claude"
+
 [ui]
-accent = "blue"
+#accent = "red"
 
 # tmux drew single-line dividers between adjacent panes and no outer frame
 pane_gaps = false
